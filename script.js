@@ -1,3 +1,31 @@
+// ── Hero Carousel ──
+const heroSlides = document.querySelectorAll('.hero-slide');
+const heroDots = document.querySelectorAll('.hero-dot');
+let currentSlide = 0;
+let heroInterval;
+
+function goToSlide(index) {
+  heroSlides[currentSlide].classList.remove('active');
+  heroDots[currentSlide].classList.remove('active');
+  currentSlide = index % heroSlides.length;
+  heroSlides[currentSlide].classList.add('active');
+  heroDots[currentSlide].classList.add('active');
+}
+
+function startCarousel() {
+  heroInterval = setInterval(() => goToSlide(currentSlide + 1), 5000);
+}
+
+heroDots.forEach(dot => {
+  dot.addEventListener('click', () => {
+    clearInterval(heroInterval);
+    goToSlide(parseInt(dot.dataset.slide));
+    startCarousel();
+  });
+});
+
+startCarousel();
+
 // ── Navbar scroll effect ──
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {

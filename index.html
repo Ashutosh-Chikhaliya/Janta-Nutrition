@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Janta Nutrition — Premium Sports Nutrition &amp; Supplements</title>
+  <title>Janta Nutrition — Premium Nutrition &amp; Supplements</title>
   <meta name="description"
     content="Janta Nutrition offers premium quality protein powders, multivitamins, and sports nutrition supplements for athletes and fitness enthusiasts." />
   <link rel="stylesheet" href="style.css" />
@@ -27,13 +27,29 @@
 
   <!-- ── Hero ── -->
   <section class="hero" id="home">
-    <div class="hero-bg"></div>
+    <div class="hero-carousel">
+      <div class="hero-slide active"
+        style="background-image: url('images/hero-slide-3.png'); background-position: center -150px; "></div>
+      <div class="hero-slide"
+        style="background-image: url('images/hero-slide-2.png'); background-position: center -350px;"></div>
+      <div class="hero-slide"
+        style="background-image: url('images/hero-banner.png'); background-position: center -50px;"></div>
+      <div class="hero-slide"
+        style="background-image: url('images/hero-slide-4.png'); background-position: center -300px;"></div>
+    </div>
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-badge">Premium Sports Nutrition</div>
       <h1>Fuel Your <span>Greatness</span></h1>
       <p>Premium quality supplements crafted for athletes who demand the best. Elevate your performance with
         science-backed nutrition.</p>
       <a href="#products" class="hero-cta">Explore Products ↓</a>
+    </div>
+    <div class="hero-dots">
+      <span class="hero-dot active" data-slide="0"></span>
+      <span class="hero-dot" data-slide="1"></span>
+      <span class="hero-dot" data-slide="2"></span>
+      <span class="hero-dot" data-slide="3"></span>
     </div>
     <div class="scroll-indicator">
       <span>Scroll</span>
@@ -113,138 +129,100 @@
       <button class="filter-btn" data-filter="protein">Protein</button>
       <button class="filter-btn" data-filter="mass">Mass Gainer</button>
       <button class="filter-btn" data-filter="health">Health &amp; Wellness</button>
+      <button class="filter-btn" data-filter="supplements">Supplements</button>
     </div>
     <div class="products-grid">
-      <!-- Lean Mass - Malai Kulfi -->
-      <div class="product-card reveal" data-category="mass">
-        <div class="product-card-image">
-          <span class="product-card-badge">Mass Gainer</span>
-          <img src="product Images/IMG-20260713-WA0000.jpg" alt="Lean Mass - Malai Kulfi" />
-        </div>
-        <div class="product-card-info">
-          <h4>Lean Mass — Malai Kulfi</h4>
-          <p>23g Protein · 0g Sugar · 250mg Creatine · 2KG</p>
-        </div>
-      </div>
       <!-- Super Whey - Belgian Chocolate -->
       <div class="product-card reveal" data-category="protein">
         <div class="product-card-image">
           <span class="product-card-badge">Whey Protein</span>
-          <img src="product Images/IMG-20260713-WA0005.jpg" alt="Super Whey - Belgian Chocolate" />
+          <img src="product Images/new image/WhatsApp Image 2026-07-13 at 4.38.41 PM (2).jpeg"
+            alt="Super Whey - Belgian Chocolate" />
         </div>
         <div class="product-card-info">
           <h4>Super Whey — Belgian Chocolate</h4>
-          <p>23g Protein · 4.5g BCAAs · 1500mg Creatine · 2KG</p>
+          <p>23g Protein · 4.5g BCAAs · 1500mg Creatine · 500mg Ashwagandha · 2KG</p>
         </div>
       </div>
       <!-- Isolate Whey - Malai Kulfi -->
       <div class="product-card reveal" data-category="protein">
         <div class="product-card-image">
           <span class="product-card-badge">Isolate</span>
-          <img src="product Images/IMG-20260713-WA0010.jpg" alt="Isolate Whey - Malai Kulfi" />
+          <img src="product Images/new image/WhatsApp Image 2026-07-13 at 4.38.42 PM (1).jpeg"
+            alt="Isolate Whey - Malai Kulfi" />
         </div>
         <div class="product-card-info">
           <h4>Isolate Whey — Malai Kulfi</h4>
-          <p>27g Protein · 7.1g BCAAs · 100mg CLA · 2KG</p>
+          <p>27g Protein · 7.1g BCAAs · 100mg CLA · 120mg Digestive Enzymes · 2KG</p>
         </div>
       </div>
-      <!-- Prime Whey - Malai Kulfi -->
-      <div class="product-card reveal" data-category="protein">
-        <div class="product-card-image">
-          <span class="product-card-badge">Whey Protein</span>
-          <img src="product Images/IMG-20260713-WA0020.jpg" alt="Prime Whey - Malai Kulfi" />
-        </div>
-        <div class="product-card-info">
-          <h4>Prime Whey — Malai Kulfi</h4>
-          <p>22g Protein · 250mg Ashwagandha · 250mg Tribulus · 2KG</p>
-        </div>
-      </div>
-      <!-- Diet Whey - Orange Cookies -->
-      <div class="product-card reveal" data-category="protein">
-        <div class="product-card-image">
-          <span class="product-card-badge">Diet Whey</span>
-          <img src="product Images/IMG-20260713-WA0018.jpg" alt="Diet Whey - Orange Cookies" />
-        </div>
-        <div class="product-card-info">
-          <h4>Diet Whey — Orange Cookies</h4>
-          <p>30.2g Protein · 100mg L-Carnitine · 500mg CLA · 2KG</p>
-        </div>
-      </div>
-      <!-- Diet Whey - Cold Coffee -->
-      <div class="product-card reveal" data-category="protein">
-        <div class="product-card-image">
-          <span class="product-card-badge">Diet Whey</span>
-          <img src="product Images/IMG-20260713-WA0022.jpg" alt="Diet Whey - Cold Coffee" />
-        </div>
-        <div class="product-card-info">
-          <h4>Diet Whey — Cold Coffee</h4>
-          <p>30.2g Protein · 100mg L-Carnitine · 500mg CLA · 2KG</p>
-        </div>
-      </div>
-      <!-- Lean Mass - Belgian Chocolate -->
+      <!-- Hyper Mass - Malai Kulfi -->
       <div class="product-card reveal" data-category="mass">
         <div class="product-card-image">
           <span class="product-card-badge">Mass Gainer</span>
-          <img src="product Images/IMG-20260713-WA0030.jpg" alt="Lean Mass - Belgian Chocolate" />
+          <img src="product Images/new image/WhatsApp Image 2026-07-13 at 4.38.42 PM.jpeg"
+            alt="Hyper Mass - Malai Kulfi" />
         </div>
         <div class="product-card-info">
-          <h4>Lean Mass — Belgian Chocolate</h4>
-          <p>23g Protein · 0g Sugar · 250mg Creatine · 2KG</p>
-        </div>
-      </div>
-      <!-- Isolate Whey - Orange Cookies -->
-      <div class="product-card reveal" data-category="protein">
-        <div class="product-card-image">
-          <span class="product-card-badge">Isolate</span>
-          <img src="product Images/IMG-20260713-WA0025.jpg" alt="Isolate Whey - Orange Cookies" />
-        </div>
-        <div class="product-card-info">
-          <h4>Isolate Whey — Orange Cookies</h4>
-          <p>27g Protein · 7.1g BCAAs · 100mg CLA · 2KG</p>
-        </div>
-      </div>
-      <!-- Multi Vitamins -->
-      <div class="product-card reveal" data-category="health">
-        <div class="product-card-image">
-          <span class="product-card-badge">Wellness</span>
-          <img src="product Images/IMG-20260713-WA0037.jpg" alt="Multi Vitamins" />
-        </div>
-        <div class="product-card-info">
-          <h4>Multi Vitamins</h4>
-          <p>Vitamin C · Vitamin E · Ashwagandha · 60 Tablets</p>
+          <h4>Hyper Mass — Malai Kulfi</h4>
+          <p>355 kcal · 2500mg Creatine · 250mg Tribulus · 200mg Glutamine · 2KG</p>
         </div>
       </div>
       <!-- Omega-3 Fish Oil -->
       <div class="product-card reveal" data-category="health">
         <div class="product-card-image">
           <span class="product-card-badge">Wellness</span>
-          <img src="product Images/IMG-20260713-WA0016.jpg" alt="Omega-3 Fish Oil" />
+          <img src="product Images/new image/WhatsApp Image 2026-07-13 at 4.38.41 PM.jpeg" alt="Omega-3 Fish Oil" />
         </div>
         <div class="product-card-info">
           <h4>Omega-3 Fish Oil</h4>
-          <p>1000mg Omega-3 · 550 EPA · 350 DHA · 60 Softgels</p>
+          <p>1000mg Omega-3 · 550mg EPA · 350mg DHA · 60 Softgels</p>
         </div>
       </div>
-      <!-- Super Whey - Malai Kulfi -->
-      <div class="product-card reveal" data-category="protein">
+      <!-- Multi Vitamins -->
+      <div class="product-card reveal" data-category="health">
         <div class="product-card-image">
-          <span class="product-card-badge">Whey Protein</span>
-          <img src="product Images/IMG-20260713-WA0001.jpg" alt="Super Whey - Malai Kulfi" />
+          <span class="product-card-badge">Wellness</span>
+          <img src="product Images/new image/WhatsApp Image 2026-07-13 at 4.38.43 PM.jpeg" alt="Multi Vitamins" />
         </div>
         <div class="product-card-info">
-          <h4>Super Whey — Malai Kulfi</h4>
-          <p>23g Protein · 4.5g BCAAs · 1500mg Creatine · 2KG</p>
+          <h4>Multi Vitamins</h4>
+          <p>40mg Vitamin-C · 10mg Vitamin-E · 200mg Ashwagandha · 60 Tablets</p>
         </div>
       </div>
-      <!-- Lean Mass extra variants -->
-      <div class="product-card reveal" data-category="mass">
+      <!-- Fat Burner -->
+      <div class="product-card reveal" data-category="health">
         <div class="product-card-image">
-          <span class="product-card-badge">Mass Gainer</span>
-          <img src="product Images/IMG-20260713-WA0003.jpg" alt="Lean Mass" />
+          <span class="product-card-badge">Wellness</span>
+          <img src="product Images/new image/WhatsApp Image 2026-07-13 at 4.38.43 PM (1).jpeg" alt="Fat Burner" />
         </div>
         <div class="product-card-info">
-          <h4>Lean Mass — Mango</h4>
-          <p>23g Protein · 0g Sugar · 250mg Creatine · 2KG</p>
+          <h4>Fat Burner</h4>
+          <p>30mg Green Tea · 25mg Caffeine · 110mg Garcinia Cambogia · 60 Tablets</p>
+        </div>
+      </div>
+      <!-- BCAA 2:1:1 - Fruit Punch -->
+      <div class="product-card reveal" data-category="supplements">
+        <div class="product-card-image">
+          <span class="product-card-badge">BCAA</span>
+          <img src="product Images/new image/WhatsApp Image 2026-07-13 at 4.38.41 PM (1).jpeg"
+            alt="BCAA 2:1:1 - Fruit Punch" />
+        </div>
+        <div class="product-card-info">
+          <h4>BCAA 2:1:1 — Fruit Punch</h4>
+          <p>3500mg Leucine · 1750mg Isoleucine · 1750mg Valine · 250g</p>
+        </div>
+      </div>
+      <!-- Creatine Monohydrate -->
+      <div class="product-card reveal" data-category="supplements">
+        <div class="product-card-image">
+          <span class="product-card-badge">Creatine</span>
+          <img src="product Images/new image/WhatsApp Image 2026-07-13 at 4.38.43 PM (2).jpeg"
+            alt="Creatine Monohydrate" />
+        </div>
+        <div class="product-card-info">
+          <h4>Creatine Monohydrate</h4>
+          <p>No Fillers · No Aspartame · No Sugar · 250g</p>
         </div>
       </div>
     </div>
