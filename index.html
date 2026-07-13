@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Janta Nutrition — Premium Sports Nutrition &amp; Supplements</title>
+  <meta name="description" content="Janta Nutrition offers premium quality protein powders, multivitamins, and sports nutrition supplements for athletes and fitness enthusiasts." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ── Navbar ── -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="logo">Janta <span>Nutrition</span></a>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Premium Sports Nutrition</div>
+      <h1>Fuel Your <span>Greatness</span></h1>
+      <p>Premium quality supplements crafted for athletes who demand the best. Elevate your performance with science-backed nutrition.</p>
+      <a href="#products" class="hero-cta">Explore Products ↓</a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── Features Strip ── -->
+  <div class="features-strip">
+    <div class="feature-card reveal">
+      <div class="feature-icon">⚡</div>
+      <h4>Lab Tested</h4>
+      <p>Every batch undergoes rigorous quality testing for purity and potency</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🏆</div>
+      <h4>Premium Quality</h4>
+      <p>Sourced from the finest raw materials for superior results</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">💪</div>
+      <h4>Proven Results</h4>
+      <p>Science-backed formulations trusted by athletes nationwide</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🌿</div>
+      <h4>Natural Ingredients</h4>
+      <p>Clean formulas with no harmful additives or fillers</p>
+    </div>
+  </div>
+
+  <!-- ── About ── -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <div class="section-tag">Who We Are</div>
+      <h2>About <span style="color:var(--gold)">Janta Nutrition</span></h2>
+      <p>Your trusted partner in premium sports nutrition and wellness supplements.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-image reveal">
+        <img src="images/about-banner.png" alt="About Janta Nutrition" />
+      </div>
+      <div class="about-text reveal">
+        <h3>Building a Healthier India, <span>One Scoop at a Time</span></h3>
+        <p>Janta Nutrition is a trusted name in the Indian sports nutrition industry, dedicated to providing premium-quality supplements under the <strong>Body Addiction</strong> brand. We believe that everyone deserves access to world-class nutrition products.</p>
+        <p>Our range includes Whey Protein, Isolate Whey, Mass Gainers, Diet Whey, Omega-3 Fish Oil, and Multivitamins — all crafted with the highest quality ingredients and manufactured in certified facilities.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-number" data-count="35" data-suffix="+">0</div>
+            <div class="stat-label">Products</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-count="10000" data-suffix="+">0</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-count="100" data-suffix="%">0</div>
+            <div class="stat-label">Authentic</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Products ── -->
+  <section class="section" id="products">
+    <div class="section-header">
+      <div class="section-tag">Our Range</div>
+      <h2>Our <span style="color:var(--gold)">Products</span></h2>
+      <p>Explore our premium range of sports nutrition supplements.</p>
+    </div>
+    <div class="product-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="protein">Protein</button>
+      <button class="filter-btn" data-filter="mass">Mass Gainer</button>
+      <button class="filter-btn" data-filter="health">Health &amp; Wellness</button>
+    </div>
+    <div class="products-grid">
+      <!-- Lean Mass - Malai Kulfi -->
+      <div class="product-card reveal" data-category="mass">
+        <div class="product-card-image">
+          <span class="product-card-badge">Mass Gainer</span>
+          <img src="product Images/IMG-20260713-WA0000.jpg" alt="Lean Mass - Malai Kulfi" />
+        </div>
+        <div class="product-card-info">
+          <h4>Lean Mass — Malai Kulfi</h4>
+          <p>23g Protein · 0g Sugar · 250mg Creatine · 2KG</p>
+        </div>
+      </div>
+      <!-- Super Whey - Belgian Chocolate -->
+      <div class="product-card reveal" data-category="protein">
+        <div class="product-card-image">
+          <span class="product-card-badge">Whey Protein</span>
+          <img src="product Images/IMG-20260713-WA0005.jpg" alt="Super Whey - Belgian Chocolate" />
+        </div>
+        <div class="product-card-info">
+          <h4>Super Whey — Belgian Chocolate</h4>
+          <p>23g Protein · 4.5g BCAAs · 1500mg Creatine · 2KG</p>
+        </div>
+      </div>
+      <!-- Isolate Whey - Malai Kulfi -->
+      <div class="product-card reveal" data-category="protein">
+        <div class="product-card-image">
+          <span class="product-card-badge">Isolate</span>
+          <img src="product Images/IMG-20260713-WA0010.jpg" alt="Isolate Whey - Malai Kulfi" />
+        </div>
+        <div class="product-card-info">
+          <h4>Isolate Whey — Malai Kulfi</h4>
+          <p>27g Protein · 7.1g BCAAs · 100mg CLA · 2KG</p>
+        </div>
+      </div>
+      <!-- Prime Whey - Malai Kulfi -->
+      <div class="product-card reveal" data-category="protein">
+        <div class="product-card-image">
+          <span class="product-card-badge">Whey Protein</span>
+          <img src="product Images/IMG-20260713-WA0020.jpg" alt="Prime Whey - Malai Kulfi" />
+        </div>
+        <div class="product-card-info">
+          <h4>Prime Whey — Malai Kulfi</h4>
+          <p>22g Protein · 250mg Ashwagandha · 250mg Tribulus · 2KG</p>
+        </div>
+      </div>
+      <!-- Diet Whey - Orange Cookies -->
+      <div class="product-card reveal" data-category="protein">
+        <div class="product-card-image">
+          <span class="product-card-badge">Diet Whey</span>
+          <img src="product Images/IMG-20260713-WA0018.jpg" alt="Diet Whey - Orange Cookies" />
+        </div>
+        <div class="product-card-info">
+          <h4>Diet Whey — Orange Cookies</h4>
+          <p>30.2g Protein · 100mg L-Carnitine · 500mg CLA · 2KG</p>
+        </div>
+      </div>
+      <!-- Diet Whey - Cold Coffee -->
+      <div class="product-card reveal" data-category="protein">
+        <div class="product-card-image">
+          <span class="product-card-badge">Diet Whey</span>
+          <img src="product Images/IMG-20260713-WA0022.jpg" alt="Diet Whey - Cold Coffee" />
+        </div>
+        <div class="product-card-info">
+          <h4>Diet Whey — Cold Coffee</h4>
+          <p>30.2g Protein · 100mg L-Carnitine · 500mg CLA · 2KG</p>
+        </div>
+      </div>
+      <!-- Lean Mass - Belgian Chocolate -->
+      <div class="product-card reveal" data-category="mass">
+        <div class="product-card-image">
+          <span class="product-card-badge">Mass Gainer</span>
+          <img src="product Images/IMG-20260713-WA0030.jpg" alt="Lean Mass - Belgian Chocolate" />
+        </div>
+        <div class="product-card-info">
+          <h4>Lean Mass — Belgian Chocolate</h4>
+          <p>23g Protein · 0g Sugar · 250mg Creatine · 2KG</p>
+        </div>
+      </div>
+      <!-- Isolate Whey - Orange Cookies -->
+      <div class="product-card reveal" data-category="protein">
+        <div class="product-card-image">
+          <span class="product-card-badge">Isolate</span>
+          <img src="product Images/IMG-20260713-WA0025.jpg" alt="Isolate Whey - Orange Cookies" />
+        </div>
+        <div class="product-card-info">
+          <h4>Isolate Whey — Orange Cookies</h4>
+          <p>27g Protein · 7.1g BCAAs · 100mg CLA · 2KG</p>
+        </div>
+      </div>
+      <!-- Multi Vitamins -->
+      <div class="product-card reveal" data-category="health">
+        <div class="product-card-image">
+          <span class="product-card-badge">Wellness</span>
+          <img src="product Images/IMG-20260713-WA0037.jpg" alt="Multi Vitamins" />
+        </div>
+        <div class="product-card-info">
+          <h4>Multi Vitamins</h4>
+          <p>Vitamin C · Vitamin E · Ashwagandha · 60 Tablets</p>
+        </div>
+      </div>
+      <!-- Omega-3 Fish Oil -->
+      <div class="product-card reveal" data-category="health">
+        <div class="product-card-image">
+          <span class="product-card-badge">Wellness</span>
+          <img src="product Images/IMG-20260713-WA0016.jpg" alt="Omega-3 Fish Oil" />
+        </div>
+        <div class="product-card-info">
+          <h4>Omega-3 Fish Oil</h4>
+          <p>1000mg Omega-3 · 550 EPA · 350 DHA · 60 Softgels</p>
+        </div>
+      </div>
+      <!-- Super Whey - Malai Kulfi -->
+      <div class="product-card reveal" data-category="protein">
+        <div class="product-card-image">
+          <span class="product-card-badge">Whey Protein</span>
+          <img src="product Images/IMG-20260713-WA0001.jpg" alt="Super Whey - Malai Kulfi" />
+        </div>
+        <div class="product-card-info">
+          <h4>Super Whey — Malai Kulfi</h4>
+          <p>23g Protein · 4.5g BCAAs · 1500mg Creatine · 2KG</p>
+        </div>
+      </div>
+      <!-- Lean Mass extra variants -->
+      <div class="product-card reveal" data-category="mass">
+        <div class="product-card-image">
+          <span class="product-card-badge">Mass Gainer</span>
+          <img src="product Images/IMG-20260713-WA0003.jpg" alt="Lean Mass" />
+        </div>
+        <div class="product-card-info">
+          <h4>Lean Mass — Mango</h4>
+          <p>23g Protein · 0g Sugar · 250mg Creatine · 2KG</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section class="section" id="contact">
+    <div class="section-header">
+      <div class="section-tag">Get in Touch</div>
+      <h2>Contact <span style="color:var(--gold)">Us</span></h2>
+      <p>Have questions about our products? We'd love to hear from you.</p>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info reveal">
+        <h3>Let's <span>Connect</span></h3>
+        <p>Whether you're a retailer, distributor, or fitness enthusiast — reach out to us and we'll get back to you promptly.</p>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div>
+            <h5>Address</h5>
+            <p>Survey No. 1156, Plot No. 12, Shop No. 9, Ground Floor, Opp. P G Clock, Sanala Road, Madhapar, Morbi, Gujarat-363641</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📧</div>
+          <div>
+            <h5>Email</h5>
+            <p>jantanutritionmorbi@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📱</div>
+          <div>
+            <h5>Phone</h5>
+            <p>+91 99130 03300</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🏢</div>
+          <div>
+            <h5>GST Number</h5>
+            <p>24DKFPR0646F1Z9</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-logo">Janta <span>Nutrition</span></div>
+    <p style="color:var(--gray);font-size:0.85rem;max-width:500px;margin:0.5rem auto 0;">Madhapar, Morbi, Gujarat-363641 &nbsp;|&nbsp; +91 99130 03300</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-divider"></div>
+    <p>&copy; 2026 Janta Nutrition. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
